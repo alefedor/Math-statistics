@@ -8,12 +8,12 @@ from functools import partial
 if (len(sys.argv) > 1):
     n = int(sys.argv[1])
 else:
-    n = 200
+    n = 1000
     
 if (len(sys.argv) > 2):
     iterations = int(sys.argv[2])
 else:
-    iterations = 100
+    iterations = 1000
     
 if (len(sys.argv) > 3):
     max_k = int(sys.argv[3])
