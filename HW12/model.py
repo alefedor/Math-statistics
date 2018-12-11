@@ -75,12 +75,12 @@ def model_using_decomposition_method():
     random = uniform_distribution()
     
     if random < c * np.exp(-a):
-        return -a - c * exponential()
+        return -a - exponential()
         
     if random < c * (2 * a + np.exp(-a)):
         return uniform_distribution() * 2 * a - a
         
-    return a + c * exponential()                    
+    return a + exponential()                    
        
 variants = [(model_using_inverse_function_method, "inverse function method"), (model_using_decomposition_method, "decomposition method")]
 
